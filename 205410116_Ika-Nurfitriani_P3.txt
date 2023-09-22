@@ -1,0 +1,186 @@
+Codelab 1 : Program pertama Anda di Kotlin
+
+/*
+fun main() {
+    println("Hello, world!") // Untuk menampilkan teks yaitu Hello, world!
+}
+
+fun main() {
+    println("Hello, Android!") // Untuk menampilkan teks yaitu Hello, Android!
+    println("Hello, Android!") // Untuk menampilkan teks yaitu Hello, Android!
+}
+
+fun main() {
+    println("Today is sunny!") // Untuk menampilkan teks yaitu Today is sunny!
+}
+
+Latihan :
+Nomor 1
+fun main() {
+    println("1") // Untuk menampilkan teks yaitu 1
+    println("2") // Untuk menampilkan teks yaitu 2
+    println("3") // Untuk menampilkan teks yaitu 3
+}
+
+Nomor 2
+fun main() {
+    println("I'm") // Untuk menampilkan teks yaitu I'm
+    println("learning") // Untuk menampilkan teks yaitu learning
+    println("Kotlin!") // Untuk menampilkan teks yaitu Kotlin!
+}
+
+Nomor 3
+fun main() {
+    println("Tuesday") // Untuk menampilkan teks yaitu Tuesday
+    println("Thursday") // Untuk menampilkan teks yaitu Thursday
+    println("Wednesday") // Untuk menampilkan teks yaitu Wednesday
+    println("Friday") // Untuk menampilkan teks yaitu Friday
+    println("Monday") // Untuk menampilkan teks yaitu Monday  
+}
+
+Nomor 4
+fun main() {
+    println("Tomorrow is rainy") // Untuk menampilkan teks yaitu Tomorrow is rainy
+}
+
+Nomor 5
+fun main() {
+    println("There is a chance of snow") // Untuk menampilkan teks yaitu There is a chance of snow
+}
+
+Nomor 6
+fun main() {
+    println("Cloudy") // Untuk menampilkan teks yaitu Cloudy
+    println("Partly Cloudy") // Untuk menampilkan teks yaitu Partly Cloudy
+    println("Windy") // Untuk menampilkan teks yaitu Windy
+}
+
+Nomor 7
+fun main() {
+    println("How's the weather today?")
+}
+*/
+
+***
+
+Codelab 2 : Membuat dan menggunakan variabel di Kotlin
+
+/*
+fun main() {
+    val count: Int = 2 // Deklarasi variabel yaitu variabel count
+    println(count) // Menampilkan value variabel count
+}
+
+fun main() {
+    val count: Int = 2 // Deklarasi variabel yaitu variabel count
+    println("You have $count unread messages.") // Simbol $ digunakan untuk memanggil variabel count Menampilkan value variabel count
+}
+
+fun main() {
+    val unreadCount = 5
+    val readCount = 100
+    println("You have ${unreadCount + readCount} total messages in your inbox.") // Simbol + untuk menambahkan value variabael unreadCount dan readCount
+}
+
+fun main() {
+    val numberOfPhotos = 100
+    val photosDeleted = 10
+    println("$numberOfPhotos photos")
+    println("$photosDeleted photos deleted")
+    println("${numberOfPhotos - photosDeleted} photos left") // Simbol - untuk mengurangkan value variabel numberOfPhotos dan photosDeleted
+}
+
+fun main() {
+    var cartTotal = 0
+    println("Total: $cartTotal")
+
+    cartTotal = 20 // Pengubahan variabel cartTotal
+    println("Total: $cartTotal")
+}
+
+fun main() {
+    var count = 10
+    println("You have $count unread messages.")
+    count = count + 1 // Penambahan value variabel count dengan 1
+    println("You have $count unread messages.")
+}
+
+fun main() {
+    val trip1 = 3.20
+    val trip2 = 4.10
+    val trip3 = 1.72
+    val totalTripLength = trip1 + trip2 + trip3
+    println("$totalTripLength miles left to destination") // Menampilkan value dari variabel totalTripLength
+}
+
+fun main() {
+    val nextMeeting = "Next meeting is: "
+    val date = "January 1"
+    val reminder = nextMeeting + date + " at work" // Deklarasi variabel dengan menggunakan variabel lain yang ada
+    println(reminder)
+}
+
+fun main() {
+    val notificationsEnabled: Boolean = false // Variabel dengan tipe data Boolean
+    println("Are notifications enabled? " + notificationsEnabled)
+}
+*/
+
+***
+
+Codelab 3 : Membuat dan menggunakan fungsi di Kotlin
+
+/*
+fun main() {
+    birthdayGreeting() // Pemanggilan fungsi birthdayGreeting
+}
+fun birthdayGreeting() { // Deklarasi sebuah fungsi yaitu birthdayGreeting
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+
+fun birthdayGreeting(): String {
+    val nameGreeting = "Happy Birthday, Rover!"
+    val ageGreeting = "You are now 5 years old!"
+    return "$nameGreeting\n$ageGreeting" // Return untuk menampilkan nilai dari fungsi
+}
+fun main() {
+    println(birthdayGreeting())
+}
+ 
+fun birthdayGreeting(name: String): String { // Menambahkan 1 parameter ke dalam fungsi
+    val nameGreeting = "Happy Birthday, $name!" // Deklarasi variabel name agar bisa berubah value
+    val ageGreeting = "You are now 5 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+fun main() {
+    println(birthdayGreeting("Rover"))
+    println(birthdayGreeting("Rex"))
+}
+
+fun birthdayGreeting(name: String, age: Int): String { Menambahkan 2 parameter ke dalam fungsi
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now $age years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+fun main() {
+    println(birthdayGreeting("Rover", 5))
+    println(birthdayGreeting("Rex", 2))
+}
+*/
+
+***
+
+Codelab 4 : Soal Latihan: Dasar-Dasar Kotlin
+
+/*
+fun main() {
+    println("New chat message from a friend')
+}
+
+fun main() {
+    val numberOfAdults = "20"
+    val numberOfKids = "30"
+    val total = numberOfAdults + numberOfKids
+    println("The total party size is: $total")
+}
